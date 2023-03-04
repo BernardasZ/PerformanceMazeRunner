@@ -193,18 +193,4 @@ public class Game : IGame
             return 0;
         }
     }
-
-    private void Print(byte[] data, int x, int y)
-    {
-        for (int i = 0; i < y; i++)
-        {
-            for (int j = 0; j < x; j++)
-                Console.Write(data[i * y + j + (i * 2)] == _space ? "  " : "XX");
-
-            Console.WriteLine();
-        }
-
-        Console.WriteLine();
-        Console.WriteLine();
-    }
 }
